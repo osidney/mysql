@@ -1,0 +1,10 @@
+[Unit]
+Description=MariaDB database server
+After=network.target
+
+[Service]
+Restart=on-failure
+RestartSec=20s
+
+[Install]
+WantedBy=multi-user.target
